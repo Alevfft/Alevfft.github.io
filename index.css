@@ -21,14 +21,14 @@
   @media (min-width: 1400px) /* xxl */ {
     
   }
-  body{
-    background-image:url("./finca_imagen_header.jpeg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  .background{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -999;
  
   }
-
   section
   {
     background: var(--whity);
