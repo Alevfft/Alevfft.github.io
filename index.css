@@ -1,0 +1,217 @@
+
+@media (min-width: 576px) /* sm */ {
+   
+  }
+  
+  @media (min-width: 768px) /* md */ {
+    
+  }
+  
+  @media (min-width: 992px) /* lg */ {
+    .fincamexicana-container img
+{
+
+    height: 80vh;
+}
+  }
+  
+  @media (min-width: 1200px) /* xl */ {
+   
+  }
+  @media (min-width: 1400px) /* xxl */ {
+    
+  }
+  body{
+    background-image:url("../assets/images/finca_imagen_header.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ 
+  }
+
+  section
+  {
+    background: var(--whity);
+    width: 100%;
+    
+  }
+.menu-background 
+{
+    height: 100vh;
+    display:flex;
+    width: 100%;
+
+
+}
+
+
+.eslogan-container
+{
+    padding: 50vh 0;
+}
+
+.eslogan-container h1
+{
+   font-style: oblique;
+   text-align: center;
+   color: var(--secondary);
+}
+
+
+.fincamexicana-container
+{
+    min-height: 100vh;
+
+}
+
+
+.fincamexicana-container img
+{
+    width: 100%;
+}
+
+
+.fincamexicana-container .text h2
+{
+  margin-bottom: 1em;
+}
+
+
+.fincamexicana-container .text
+{
+  padding-top: 25vh ;
+  text-align: right ;
+  padding-left: 3em;
+  border-right: var(--secondary) solid 3px;
+  
+}
+
+
+.servicios-container
+{
+    
+    padding: 0 3em ;
+
+    display: block;
+ 
+}
+
+.servicios-container h2
+{
+    text-align: center;
+   margin: 2em 0;
+ 
+}
+
+
+.servicios-container .card
+{
+    margin: 2em;
+    width: 25em;
+    color: rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+   background:var(--primary);
+   will-change: transform, opacity;
+   transition: transform 0.2s ease-in-out ;
+   transition-delay:0s ;
+   cursor: pointer;
+
+}
+
+
+.servicios-container .card:hover
+{
+    transform: translateY(-1em) scale(1.05) !important; /* Aumenta el tamaño ligeramente */
+}
+
+.opinions-container {
+    display: flex;
+    height: 10;
+    height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+    background:var(--secondary);
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.opinions {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 15vh;
+    position: relative;
+    padding: 10px 0;
+    white-space: nowrap; /* Evita saltos de línea */
+}
+.opinions h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.opinions-track {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.opinions-right ,.opinions-left
+{
+    margin: 4vh 0;
+}
+
+.opinions-left .opinions-track {
+    animation-name: scroll-left;
+    animation-duration: 20s;
+}
+
+.opinions-right .opinions-track {
+    animation-name: scroll-right;
+    animation-duration: 25s;
+}
+
+.opinions-item {
+    background: var(--whity) ;
+    color: rgb(0, 0, 0);
+    padding: 1.5em;
+    border-radius: 10px;
+    min-width: 20em;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Animaciones corregidas */
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scroll-right {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+.footer-contacto-section
+{
+    padding: 4em 0;
+    background-color: var(--primary);
+    text-align: center;
+}
+
+.footer-contacto-section button
+{
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--backgrund);
+    border-color: var(--backgrund);
+}
