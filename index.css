@@ -22,7 +22,7 @@
     
   }
   body{
-    background-image:url("../assets/images/finca_imagen_header.jpeg");
+    background-image:url("./finca_imagen_header.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
