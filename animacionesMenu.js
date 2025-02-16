@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", function () {
         let currentScrollY = window.scrollY;
 
-        if (currentScrollY > 150) {
+        if (currentScrollY > 0) {
             if (!isScrolled) {
                 header.classList.add("active");
                 header.classList.remove("inactive");
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 headerBg.style.top = "-100%";
                 menu.style.opacity = "0";
                 menu.style.transform = "translateY(-100%)";
-                menu.style.transition = "transform 0.5s ease-in-out, opacity 0.5s ease-in-out";
+                menu.style.transition = "transform 0.3s , opacity 0.3s ";
                 isHidden = true;
             } else if (currentScrollY < lastScrollY && isHidden) {
                 // Scroll hacia arriba → Mostrar header-bg y menu-toolbar-xl
