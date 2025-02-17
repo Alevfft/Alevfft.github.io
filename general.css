@@ -71,7 +71,7 @@
   --primary: #d3d925;
   --secondary: #d9526b;
   --backgrund: #262626;
-  --whity: #f1efe7;
+  --whity: #ebe8dc;
 }
 
 p
@@ -81,6 +81,7 @@ p
 
 html {
   scroll-behavior:smooth;
+  overflow-x: hidden;
 }
 
 
@@ -89,6 +90,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -96,6 +98,14 @@ body {
 }
 h1, h2 , h3 , h4 , h5 {
   color: var(--backgrund);
+}
+
+h1{
+  font-size: 5em;
+}
+h2
+{
+  font-size:3em;
 }
 
 header {
@@ -127,7 +137,14 @@ button
 }
 
 
+.background{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  z-index: -999;
 
+}
 
 .margins
 {
@@ -141,9 +158,17 @@ button
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #262626;
-  transition: top 0.5s ease;
+  background-color:var(--backgrund);
+  transition: top 0.3s ;
   z-index: -1;
+}
+.menu-background 
+{
+    height: 100vh;
+    display:flex;
+    width: 100%;
+
+
 }
 .sombra-background
 {
@@ -290,6 +315,21 @@ header.inactive .header-bg {
     padding: 2em;
 }
 
+.footer-contacto-section
+{
+    padding: 4em 0;
+    background-color: var(--primary);
+    text-align: center;
+}
+
+.footer-contacto-section button
+{
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--backgrund);
+    border-color: var(--backgrund);
+}
+
 
 footer .footer-section
 {
@@ -302,3 +342,4 @@ footer .footer-section p, footer .footer-section li, footer .footer-section labe
 {
     color: white;
 }
+
